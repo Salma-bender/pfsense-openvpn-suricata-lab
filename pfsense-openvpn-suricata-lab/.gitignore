@@ -1,0 +1,7 @@
+# Ne jamais publier de clés, certificats ou configs VPN
+*.ovpn
+*.key
+*.pem
+*.crt
+*.p12
+config.xml

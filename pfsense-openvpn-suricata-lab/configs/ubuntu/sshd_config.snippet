@@ -1,0 +1,11 @@
+# Paramètres à ajouter dans /etc/ssh/sshd_config
+# Vérifier avec : sudo sshd -T | grep -E "permitrootlogin|maxauthtries|x11forwarding|permitemptypasswords"
+# Puis : sudo systemctl restart ssh
+
+PermitRootLogin no
+MaxAuthTries 3
+LoginGraceTime 30
+X11Forwarding no
+PermitEmptyPasswords no
+ClientAliveInterval 300
+ClientAliveCountMax 2
